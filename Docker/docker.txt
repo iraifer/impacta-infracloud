@@ -1,0 +1,6 @@
+docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=Aula@123 -d mysql/mysql-server:latest
+docker exec -it mysql bash
+mysql -uroot -p
+create database AulaInfra;
+CREATE USER 'idaniele'@'%' IDENTIFIED BY 'idaniele';
+GRANT ALL PRIVILEGES ON *.* TO 'idaniele'@'%' WITH GRANT OPTION;
